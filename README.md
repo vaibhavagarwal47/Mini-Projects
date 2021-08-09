@@ -4,5 +4,7 @@
 |S.No|Project Name|
 |----|------------|
 |1.|Tic-Tac-Toe|
-|2.|YOYO|
+|2.|Yoyo|
 |3.|Rock-Paper-Scissors|
+|4.|Text Encryption-Decryption|
+|5.|Lotto Case Study|
