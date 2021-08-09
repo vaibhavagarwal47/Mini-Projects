@@ -5,6 +5,4 @@
 |----|------------|
 |1.|Tic-Tac-Toe|
 |2.|Yoyo|
-|3.|Rock-Paper-Scissors|
-|4.|Text Encryption-Decryption|
-|5.|Lotto Case Study|
+|3.|Text Encryption-Decryption|
