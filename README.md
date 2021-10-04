@@ -1,5 +1,5 @@
 # Mini Projects
-> Here are some Mini Projects made using C++.
+> Here are some Mini Projects made in various Programming Languages.
 
 |S.No|Project Name|
 |----|------------|
