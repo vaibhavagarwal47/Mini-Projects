@@ -6,7 +6,7 @@
     </a>
 </p>
 > Here are some Mini Projects made in various Programming Languages.
-
+<br>
 |S.No|Project Name|
 |----|------------|
 |1.|Tic-Tac-Toe|
