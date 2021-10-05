@@ -5,8 +5,10 @@
         <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" width="70%">
     </a>
 </p>
+
 > Here are some Mini Projects made in various Programming Languages.
-<br>
+
+
 |S.No|Project Name|
 |----|------------|
 |1.|Tic-Tac-Toe|
