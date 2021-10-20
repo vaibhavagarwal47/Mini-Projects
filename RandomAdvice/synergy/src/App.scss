@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+$font: "Lato", sans-serif;
+
+$aqua: white;
+$pink: black;
+$pink-dark: darken($pink, 5%);
+$orange: black;
+$orange-dark: darken($orange, 5%);
+
+h1{
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: $font;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: $aqua;
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.button {
+  padding: 15px;
+  color: white;
+  font-size: 0.7em;
+  border-radius: 10px;
+  border: 1px solid $pink;
+  background: linear-gradient(to right, $pink 70%, $orange);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  &:before {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    background: white;
+    transform: translate3d(0.5em, 0.5em, 1em);
+    border-radius: 10px;
+    border: 2px solid $pink;
+    box-shadow: 5px 5px 0 1px rgba($orange, 0.8);
+    transition: transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+    &:active {
+      z-index: -1;
+    }
+  }
+  &:hover {
+    transition: all 0.1s cubic-bezier(0, 0, 0.7, 1);
+    top: 4px;
+    left: 3.5px;
+    &:before {
+      // transform: translate3d(0em, 0em, 0em);
+      box-shadow: 4px 4px 0 1px rgba($orange, 0.4);
+      top: -5.5px;
+      left: -4.7px;
+    }
+  }
+  &:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    background: $pink-dark;
+    &:before {
+      transition: all 0.1s cubic-bezier(0, 0, 0.7, 1);
+      box-shadow: 0px 0px 0px 0px;
+      top: -5.5px;
+      left: -4.7px;
+      border: 1px solid $pink-dark;
+    }
+  }
+}

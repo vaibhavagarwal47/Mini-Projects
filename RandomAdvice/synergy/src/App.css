@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+p {
+  font-size: 4vh;
+  font-family: 'Sofia', cursive;
+  text-align: center;
+  margin:10px;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background: white;
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.button {
+  padding: 15px;
+  color: white;
+  font-size: 0.7em;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, black), to(black));
+  background: linear-gradient(to right, black 70%, black);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.7, 1), -webkit-transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+}
+
+.button:before {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  background: white;
+  -webkit-transform: translate3d(0.5em, 0.5em, 1em);
+          transform: translate3d(0.5em, 0.5em, 1em);
+  border-radius: 10px;
+  border: 2px solid black;
+  -webkit-box-shadow: 5px 5px 0 1px rgba(0, 0, 0, 0.8);
+          box-shadow: 5px 5px 0 1px rgba(0, 0, 0, 0.8);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.7, 1), -webkit-transform 0.2s cubic-bezier(0, 0, 0.7, 1);
+}
+
+.button:before:active {
+  z-index: -1;
+}
+
+.button:hover {
+  -webkit-transition: all 0.1s cubic-bezier(0, 0, 0.7, 1);
+  transition: all 0.1s cubic-bezier(0, 0, 0.7, 1);
+  top: 4px;
+  left: 3.5px;
+}
+
+.button:hover:before {
+  -webkit-box-shadow: 4px 4px 0 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 0 1px rgba(0, 0, 0, 0.4);
+  top: -5.5px;
+  left: -4.7px;
+}
+
+.button:active {
+  -webkit-box-shadow: 0px 0px 0px 0px;
+          box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+  background: black;
+}
+
+.button:active:before {
+  -webkit-transition: all 0.1s cubic-bezier(0, 0, 0.7, 1);
+  transition: all 0.1s cubic-bezier(0, 0, 0.7, 1);
+  -webkit-box-shadow: 0px 0px 0px 0px;
+          box-shadow: 0px 0px 0px 0px;
+  top: -5.5px;
+  left: -4.7px;
+  border: 1px solid black;
+}
+
+@keyframes randomFace {
+  from { background-position: 0 0; }
+  to { background-position: 111% 0; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: CornflowerBlue;
+}
+
+input {
+  display: none;
+}
+
+.me {
+  display: block;
+  cursor: pointer;
+  background: url('https://rlbaxter.us/img/faceless-me.svg') no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  width: 20vw; 
+  height: 20vw;
+  max-height: 50vh;
+  max-width: 89.95vh;
+}
+
+.face::before,
+.face::after {
+  content: '';
+  display: block;
+  width: 29%;
+  padding-top: 29%;
+  position: absolute;
+  top: 0;
+  margin-top: 18%;
+  left: 38%;
+  background: url('https://rlbaxter.us/img/faces.svg') no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  animation: randomFace 1s steps(10, end) infinite;
+  opacity: 0;
+}
+
+input:checked + .me .face::before,
+input:not(:checked) + .me .face::after{
+  opacity: 1;
+  animation-play-state: paused;
+}
+
+/* Glasses */
+.me::after {
+  content: '';
+  display: block;
+  background: url('https://rlbaxter.us/img/glasses.svg') no-repeat;
+  background-size: 100%;
+  width: 39%;
+  padding-top: 12%;
+  position: absolute;
+  top: 0;
+  margin-top: 24%;
+  left: 28%;
+}
+/*# sourceMappingURL=App.css.map */
