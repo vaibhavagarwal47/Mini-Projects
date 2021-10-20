@@ -18,3 +18,6 @@
 |5.|Weather App|
 |6.|Random Password Generator|
 |7.|Portfolio Site|
+|8.|Medical System Requirement|
+|9.|Quiz App|
+
