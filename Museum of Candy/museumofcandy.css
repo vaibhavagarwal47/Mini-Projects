@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: palegoldenrod;
+    font-family:Nunito, sans-serif;
+}
+.navbar .navbar-brand{
+    padding-left: 10px;
+    color: #ea1c2c;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.navbar .navbar-brand:hover{
+    color: #ea1c2c;
+}
+
+#navlinks .navbar-nav .nav-item a{
+    font-size: 1.25rem;
+    font-weight: 100;
+    color: #ea1c2c;
+}
+
+#navlinks .navbar-nav .nav-item a:hover{
+    color: brown;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon{
+    color: chartreuse;
+}
+
+#headinggroup h1{
+    font-weight: 100;
+    color: white;
+}
+
+#headinggroup span{
+    color: #ea1c2c;
+}   
+
+.blurb h2{
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+section{
+    margin-bottom: 100px;
+}
+.blurb p{
+    color: #f498e8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+
+.contactus .contact,.info p{
+    text-decoration: none;
+    color:#ea1c2c;
+}
+
+.contactus a:hover{
+    color: palevioletred;
+}
+.info p{
+    margin-top: 10px;
+}
+
+#info{
+    padding-top: 20px;
+    background-color: pink;
+}
+
+.navbar.scrolled{
+    background-color: rgb(0,0,0);
+}
+
+
+
+
+@media (max-width:1200px)
+{
+    #headinggroup h1{
+        font-size: 3rem;
+    }
+}
